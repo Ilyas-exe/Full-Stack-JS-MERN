@@ -19,7 +19,6 @@ function bubbleSort(arr){
         for (let j = 0; j < arr.length-i-1; j++) {
             if (arr[j]>arr[j+1]) {
                 [arr[j],arr[j+1]] = [arr[j+1],arr[j]]
-                
             }
         }
     }
@@ -43,8 +42,8 @@ function binarySearch(arrOfNumbers,numToLook) {
     }
     return `the number ${numToLook} not exist`
 }
-// let arrayTest = [ 6 , 10 , 25 ,40, 50 , 100 , 200]
-// console.log(binarySearch(arrayTest,6))
+let arrayTest = [ 6 , 10 , 25 ,40, 50 , 100 , 200]
+console.log(binarySearch(arrayTest,6))
 // console.log(binarySearch(arrayTest,10))
 // console.log(binarySearch(arrayTest,25))
 // console.log(binarySearch(arrayTest,40))
