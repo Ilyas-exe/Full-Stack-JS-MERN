@@ -9,16 +9,17 @@ function readFileAsync(filePath){
             else reject('error')
         })
             myPromise
-                .then(()=>{
-                    console.log(data.toString())
+                .then(function test(){
+                    return(data.toString())
                 })
                 .catch(()=>{
-                    console.log(err)
+                    return(err)
                 })
     })
+    return (data.toString())
 }
-readFileAsync('example.txt')
-console.log('hello')
+// readFileAsync('example.txt')
+// console.log('hello')
 
 writeFileAsync
 function writeFileAsync(filePath,content){
@@ -38,9 +39,17 @@ function writeFileAsync(filePath,content){
             })
     })
 }
-writeFileAsync('example.txt','test')
+// writeFileAsync('example.txt','test')
 
 //processFiles
-function processFiles(filePath,content){
-
+function processFiles(filePath){
+    // let value = readFileAsync(filePath)
+    // writeFileAsync(filePath,)
+    // console.log('the upeercase convert done')
+    // console.log(value)
 }
+processFiles('example.txt')
+
+
+
+
