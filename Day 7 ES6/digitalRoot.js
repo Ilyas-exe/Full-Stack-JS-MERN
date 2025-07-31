@@ -12,7 +12,6 @@ function digitalRoot(n) {
         if(n.toString().length==1){break}
     }else{
         i++
-        
     }
   }
         
