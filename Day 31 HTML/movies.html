@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - All Movies</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">LOGO</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-movies">
+            <img src="assets/images/movies-banner.jpg" alt="Promotional banner for action movies" style="width:100%; height:auto;">
+            <div class="hero-content">
+                <h1>Explore Our Collection</h1>
+                <p>Find your next favorite movie from our vast library.</p>
+                <a href="#movie-list" role="button">Browse Now</a>
+            </div>
+        </section>
+        
+        <section id="movie-list">
+            <h2>All Movies</h2>
+            <form action="#" method="get">
+                <input type="search" name="search" placeholder="Search for a movie..." aria-label="Search for a movie">
+                <button type="submit">Search</button>
+            </form>
+
+            <div class="movie-grid">
+                <article class="movie-item">
+                    <a href="movie-details.html">
+                        <img src="assets/images/poster1.jpg" alt="Poster for Cybernetic Dawn">
+                    </a>
+                    <h3>Cybernetic Dawn</h3>
+                    <p>A rogue AI threatens to dismantle society, and only a disgraced hacker can stop it.</p>
+                </article>
+
+                <article class="movie-item">
+                     <a href="movie-details.html">
+                        <img src="assets/images/poster2.jpg" alt="Poster for Ocean's Whisper">
+                    </a>
+                    <h3>Ocean's Whisper</h3>
+                    <p>A marine biologist discovers a hidden world beneath the waves, but its secrets come at a price.</p>
+                </article>
+
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MovieFlix. All rights reserved.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
