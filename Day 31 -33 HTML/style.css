@@ -1,0 +1,167 @@
+/* =================================== */
+/* Global Styles & Box Sizing     */
+/* =================================== */
+
+/* Apply a natural box layout model to all elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #121212; /* Dark background for a cinematic feel */
+    color: #f5f5f5; /* Light text color for contrast */
+}
+
+/* =================================== */
+/* Header & Navbar Layout       */
+/* =================================== */
+
+header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333; /* Subtle border to separate from content */
+    padding: 1rem 2rem; /* Vertical and horizontal padding */
+}
+
+nav {
+    display: flex; /* Use Flexbox for easy alignment */
+    justify-content: space-between; /* Pushes logo and links to opposite ends */
+    align-items: center; /* Vertically aligns items */
+}
+
+nav a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the navigation links list */
+nav ul {
+    list-style-type: none; /* Removes default bullet points */
+    display: flex; /* Aligns list items in a row */
+}
+
+nav ul li {
+    margin-left: 2rem; /* Adds space between navigation items */
+}
+
+/* =================================== */
+/* Main Content Layout         */
+/* =================================== */
+
+/* --- Hero Section --- */
+.hero {
+    position: relative; /* Establishes a positioning context for child elements */
+    height: 80vh; /* Takes up 80% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Ensures video doesn't spill out */
+}
+
+#hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Places the video behind the content */
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+    padding: 2rem 3rem; /* Padding inside the content box */
+    border-radius: 8px; /* Softens the corners */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content a[role="button"] {
+    display: inline-block; /* Allows setting padding and margin */
+    background-color: #e50914; /* Brand color */
+    color: #fff;
+    padding: 0.8rem 1.5rem; /* Space inside the button */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- New Releases Section --- */
+.new-releases {
+    padding: 3rem 2rem; /* Generous padding for spacing */
+    text-align: center;
+}
+
+.new-releases h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Space below the heading */
+}
+
+.movie-gallery {
+    display: flex; /* Lays out movie cards in a row */
+    justify-content: center; /* Centers the cards if they don't fill the space */
+    gap: 1.5rem; /* Space between each movie card */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+}
+
+.movie-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333; /* Defines the card's boundary */
+    border-radius: 8px;
+    width: 250px; /* Fixed width for each card */
+    text-align: left;
+}
+
+.movie-card img {
+    display: block; /* Removes bottom space under the image */
+    width: 100%; /* Makes the image fill the card's width */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.movie-card h3, .movie-card p {
+    padding: 0.5rem 1rem; /* Padding for the title and genre */
+}
+
+.movie-card h3 {
+    padding-top: 1rem;
+    padding-bottom: 0; /* Tighter spacing for the text */
+}
+
+/* =================================== */
+/* Footer Layout              */
+/* =================================== */
+
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 2rem; /* Adds plenty of vertical and horizontal space */
+    margin-top: 3rem; /* Pushes the footer away from the content above */
+    border-top: 1px solid #333; /* Defines the top edge of the footer */
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
